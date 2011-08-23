@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Account Chooser | Learn More</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	
+<div class="header">
+	<a href="index.html">
+		<img src="images/keyhole-logo.png" alt="" />
+		<h1>Account Chooser</h1>
+	</a>
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="how.html">How it works</a></li>
+		<li><a href="webowners.html">For website owners</a></li>
+		<li><a href="idp.html">For identity providers</a></li>
+	</ul>
+</div>
+
+<div class="values">
+	<div class="value1">
+		<div class="proposition" id="simpleupgrade">
+			<h3>Simple Upgrade</h3>
+			<p>If a user has been logging into a website for a long time with a password, then the account chooser experience makes it easy for the website to upgrade them to use an identity provider.  After the website upgrades their login flow to use an account chooser, the user will either click a button or type their email address.  The user can then be redirected to an identity provider, and give their consent to be identified to the website.<br /><br />If the identity provider is also the user’s email provider, then the website can simply log the user into their existing account.  It is generally not even necessary to show the user an extra page to explain what happened, though some websites might want to send an email message to the user (especially if the website has an iphone or Android app that will require the user to connect to their account at the website again).<br /><br />If the identity provider is not the user’s email provider, then the website needs to confirm that the same person controls the existing account on the website, and the account at the identity provider. There are some <a href="https://sites.google.com/site/oauthgoog/UXFedLogin/loginlogic">standard best practices</a> for that scenario.</p>
+		</div>
+	</div>
+	<div class="value2">
+		<div class="proposition" id="easesswitching">
+			<h3>Eases switching between multiple accounts.</h3>
+			<p>Many computers are shared by multiple people who each of their own accounts.  Many more are used to access multiple accounts used by the same person such as their personal and work accounts.  It is frustrating for end users to log into a traditional website where multiple accounts on the same computer are used.  However if the website deploys an account chooser, then the process is much simpler.  The website can make it even more simpler by providing a navigation bar or button to let the user switch accounts.<br /><br />One particularly tricky problem is when the different accounts on a computer use the same identity provider.  When users try to log into a website by simply clicking the button of an identity provider, they frequently get logged in use a different account than the one they wanted to use.  If they do not notice this fact, they can embarassas themselves (and the other account owner) by accidentally posting information to the wrong account.  Fortunately the account chooser solves this problem because the user clicks the specific account they want to use, instead of just the identity provider.  The website and identity provider can then make sure that the person uses that particular account.</p>
+		</div>
+	</div>
+	<div class="value3">
+		<div class="proposition" id="reducessignuppains">
+			<h3>Reduces signup pains on any website.</h3>
+			<p>The marketing team of a website generally considers the login page to be an important one to help attract new users.  However with a traditional website the same login page is shown both to existing users and new users.  With the account chooser, a website can detect if the computer is being used by someone who probably already has an account, because there will be an existing list of accounts.  In that case, the website can show different marketing material that is optimized to educate existing users about features of the website, instead of trying to attract new users.</p>
+		</div>
+	</div>
+	<div class="value4">
+		<div class="proposition" id="security">
+			<h3>Security</h3>
+			<p>The use of identity providers not only makes it easier for people to use websites, but also makes their accounts more secure.  With traditional websites, people tend to reuse password across sites.  If hackers are able to compromise even a single website, they can then use that password to break into the person’s accounts on other websites.  Unless a user’s password is extremely complex, there are unfortunately very simple techniques, such as dictionary attacks, that hackers can use to identity a person’s password on almost any small to medium website.  Fortunately identity providers can be certified to confirm they offer protection against those types of techniques.  Once a website upgrades a person’s account to use an identity provider, the website can simply delete the existing password it had for the user to minimize the threats of password reuse.  Though as noted above, if the identity provider is not the user’s email provider, then the website needs to confirm that the same person controls the existing account on the website, and the account at the identity provider.<br /><br />In addition, many identity providers offer users the ability to add more protection to their identity provider account, such as using multiple factors of authentication such as a one-time code send to the user’s phone number.  Identity providers also frequently have advanced systems in place to detect hijacked accounts, and suspend them until the real owner goes through an account recovery process.  During the time the account is suspended, the hijackers will be unable to log into websites where the user’s account is linked to this identity provider.</p>
+		</div>
+	</div>
+	<div class="value5">
+		<div class="proposition" id="consistency">
+			<h3>Consistency</h3>
+			<p>Websites can deploy the account chooser in a very visually consistent manner.  One a user has used this technique on one website, they will be able to easily recognize and use it on another website.  That visual recognition generally causes an increase in the set of users who are willing to log into a website they have never visited before.</p>
+		</div>
+	</div>
+	<div class="value6">
+		<div class="proposition" id="forgottenaccounts">
+			<h3>Forgotten Accounts</h3>
+			<p>One common problem end user’s encounter is when they visit a website and do not remember that they already have an account.  Generally they would try to go to the account creation step, and they would get an error about their existing account.  With the account chooser, this problem goes away.  They will either type their email or choose their identity provider.  In either case the website can then immediately log them in if they have an identity provider, or ask for their password if they don’t.</p>
+		</div>
+	</div>
+	<div class="value7">
+		<div class="proposition" id="futurecompatability">
+			<h3>Future Compatibility</h3>
+			<p>Today there are a few identity providers, but in the future we expect many more.  A website could simply add buttons to its login box for 3-4 identity providers, but they could not add more without visually overwhelming users.  In addition, if one of the identity providers became less popular (which has happened with some social networks and email providers) then it is very hard for the website to remove that button and replace it with a different identity provider.<br /><br />The account chooser experience splits the process of adding an account from the process of signing into an account.  When the website shows a page to add an account, it can generally show 3-4 identity providers.  That list can be modified over time, and can even be varied based on information like the user’s location and preferred language.  For example, if a user’s language is Russian, then the website might list one of the popular identity providers in Russia.  If a user’s location is in South Korea, then the website might list one of the popular identity providers in South Korea.<br /><br />If the user’s identity provider is not known, they still have the option to type their email address.  The website can then check its account database to see if there is a known identity provider for that account.  That can be especially helpful if the user cannot remember which identity provider they used at the site.  If there is not an identity provider associated with their account, it can then check if there is a known identity provider for that email domain.  If an identity provider still cannot be found, then the website can have the user login or sign up the traditional way with a password.</p>
+		</div>
+	</div>
+	<div class="value8">
+		<div class="proposition" id="legacycompatability">
+			<h3>Legacy Compatibility</h3>
+			<p>Most websites today offer a traditional login box with fields for a user’s email address and password.  The website could offer support for identity providers by simply adding buttons around the existing login box.  However that generally creates significant confusion for users because they think there are two ways to login, and they don’t know which one is the correct method to use.  This problem is greatly reduced by splitting the process of adding an account from the process of signing into an account.  It also avoids showing the password field to any users except those who absolutely need to use a password.</p>
+		</div>
+	</div>
+	<div class="value9">
+		<div class="proposition" id="protocolagnostic">
+			<h3>Protocol Agnostic</h3>
+			<p>There are many technical protocols support by identity providers (OpenID v2, SAML, OAuth2, OpenIDConnect, etc.)  The Account Chooser is not specific to the protocol, and the website can even use different protocols to support different identity providers.  As protocols evolve in the future, the website can continue to use the Account Chooser experience to hide the protocol details from the user.</p>
+		</div>
+	</div>
+</div>
+
+<div class="footer">&copy; 2011 OpenID Foundation.</div>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Account Chooser | For Identity Providers</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	
+<div class="header">
+	<a href="index.html">
+		<img src="images/keyhole-logo.png" alt="" />
+		<h1>Account Chooser</h1>
+	</a>
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="how.html">How it works</a></li>
+		<li><a href="webowners.html">For website owners</a></li>
+		<li><a href="idp.html" id="current-page">For identity providers</a></li>
+	</ul>
+</div>
+
+<div class="values">
+	<div class="value1">
+		<div class="proposition" id="simpleupgrade">
+			<h3>Introduction to Federated Login</h3>
+			<p>Google Identity Toolkit (GITkit) enables the Relying Parties to use internet standard protocols, OpenID 2.0 and OAuth, to verify that a user owns an account on their web sites and allow them to login using identities from other Identity Providers. Relying Party (RP, such as your developer site) refers to web site that relies on identities provided by Identity Providers (IDP). IDP, such as Google, Yahoo, is the counter party in OpenID, which provides the identity assertion to Relying Parties (i.e., assert that this user actually owns john_doe@gmail.com). The details of OpenID and OAuth protocols can be found in their respective sites.</p>
+			<p>The OpenID's flow diagram is quite complicated. GITkit has reduced significantly the complexity of using OpenID protocol by implementing many logics in its backend, such as IDP discovery, secret association, assertion verification. And GITkit exposes OpenID/OAuth protocol by providing 2 APIs that RP will call in two consecutive steps:</p>
+			<ol>
+				<li>createAuthUrl: this API call happens when user clicks on the IDP icons (i.e., Gmail, Yahoo buttons) or enters an email address directly. The GITkit backend will perform IDP discovery according to OpenID 2.0 protocol. If the IDP actually uses OAuth protocol, then GITkit will use predefined IDP endpoint directly. The end result is that GITkit returns the URI (paramter "authUri") which represents the IDP's authorization endpoint, and the GITkit login widget pops up a login window which redirects to that endpoint. Please note that when calling createAuthUrl, the RP also needs to pass in the "continueUrl" (i.e., the callback URL) which is the URL that should be redirected to after user has successfully authenticated himself by the corresponding IDP. The "realm" is an optional parameter that identifies OpenID's realm, while the "identifier" specifies which IDP to use.</li>
+				<li>verifyAssertion: after the IDP has successfully authenticated the user, it will redirect the browser to the URL that is specified in createAuthUrl's "continueUrl" parameter with the user's identity information signed with its secret key (you can think of it as a binary blob that you do not need to process, and it will be sent back to GITkit for validation). The HTTP request for the callback URL will be captured by the GITkit client library in RP's backend, and the client library code will call the GITkit's verifyAssertion API with "requestUri" (the URI the IDP returns) and "postBody" (the signed IDP response). The GITkit backend will validate the IDP response using OpenID protocol, and returns all the identity information (also attributes associated with that identity if AX is used) to RP's backend. RP usually inspects the "verifiedEmail" field, and make according actions -- if the account with that email address is valid, the user is logged in, and the Javascript widget closes the login window, and redirects the user's browser to RP's home page. If there is no account found for that email, RP should redirect the user to the account creation page, with email field pre-filled and uneditable, together with other attributes for the accounts filled in.</li>
+			</ol>
+			<p>For OAuth based IDP authentication, RP still uses the same calls and gets the same response back from GITkit. But GITkit will use OAuth protocol in its backend to communicate with IDP and do the right processing, such as exchanging for access tokens.</p>
+		</div>
+	</div>
+	<ul>
+		<li><a href="http://code.google.com/apis/identitytoolkit/v1/acguide.html">API Documentation</a></li>
+		<li><a href="https://github.com/openid/accountchooser">View the code</li>
+	</ul>
+</div>
+
+<div class="footer">&copy; 2011 OpenID Foundation.</div>
+
+</body>
+</html>

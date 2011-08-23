@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Account Chooser | How it Works</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	
+<div class="header">
+	<a href="index.html">
+		<img src="images/keyhole-logo.png" alt="" />
+		<h1>Account Chooser</h1>
+	</a>
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="how.html" id="current-page">How it works</a></li>
+		<li><a href="webowners.html">For website owners</a></li>
+		<li><a href="idp.html">For identity providers</a></li>
+	</ul>
+</div>
+
+<div class="values">
+	<div class="value1">
+		<div class="proposition" id="simpleupgrade">
+			<h3>Prerequisites</h3>
+			<p>First we assume that your website requires users to enter an email address and password to login. Visit the <a href="#">Google APIs Console Configuration</a> to activate the GITkit API, and get the generated JavaScript snippet which includes the config parameters, API keys, etc. The Google API Console is a tool that lets you manage the requests your applications make to Google APIs. The Console lets you:</p>
+			<ul>
+				<li>Choose which APIs to use in your project</li>
+				<li>Share your project with other people or a team</li>
+				<li>Define traffic controls to limit who and how frequently (QPS) your application makes API requests</li>
+				<li>See traffic reports of your project's API usage over time</li>
+				<li>Manage your keys for correct request identification</li>
+			</ul>
+			<p>For more information of general Google APIs Console usage, <a href="#">see its help page</a>.</p>
+		</div>
+	</div>
+	<div class="value1">
+		<div class="proposition" id="simpleupgrade">
+			<h3>API Integration Options</h3>
+			<p>GITkit provides several components to simplify the work needed for RPs.</p>
+			<ul>
+				<li>GITkit API and Service handles the details of the federated login protocols between RP and Identity Providers (IDP).</li>
+				<li>JavaScript widgets for login and account signup can be embedded into your web pages easily.</li>
+				<li><a href="#">GITkit client libraries</a> communicate with the Google Identity Toolkit using the GITkit API, and drive the UI flow of the JavaScript widgets.</li>
+			</ul>
+			<p>There are a few different options for how to modify your server to use the GITKit widget:</p>
+			<ul>
+				<li>Use Account Chooser: follow this guide to use the newest login UI component that supports both federated login and legacy login.</li>
+				<li>Direct API access: Since there is only one simple API to call from your server, you may choose to integrate directly with the API.</li>
+				<li>Server-side libraries (called GITkit client libraries): We have also provided libraries for certain languages/frameworks that may simplify the server side integration, especially for new sites.</li>
+				<li>Sample apps: The last option is to download a sample app that is already integrated with GITKit, and then modify it to build a new site. Currently we have three sample sites that are provided with different GITkit packages and RP scenarios.</li>
+			</ul>
+		</div>
+	</div>
+	<div class="value1">
+		<div class="proposition" id="simpleupgrade">
+			<h3>Optional Tasks</h3>
+			<p>The following is a list of optional changes you may make to your website to improve the user experience for federated login.</p>
+			<ul>
+				<li>Modify your new account creation page, so that when creating a federated account, there is no need for the user to provide a password.<br />Your new account servlet can detect the account type (federated or legacy) by looking at the session state. Your new account page can also import the attributes that are exchanged with IDPs by GITkit, such as email address, first name, last name, etc, and pre-fill the account creation form so that it is easy for users to signup.</li>
+				<li>Modify your account management page that allows a user to change their email address.<br />If the user has an OpenID enabled account and changes their email address to a non-OpenID enabled account, then they need a way to set a password on the account. You can either ask them to provide a password at the same time they change their email, or you can email them a password reset link if your site already has the code for sending such a link.</li>
+				<li>Modify your account management page to remove the option for a user to modify their password if their account is configured to use federated login.<br />If you provide an installed application for your users (such as an Android or iPhone app), then it probably is configured today to ask the user for their email address and password. That will not work for federated login users because they do not have a password on your site. For these users you should replace the "change password" link on your website to instead be called "View account password." If the user visits that page you should display a randomly generated password for the user, and then save that password into the user record in your database that is traditionally used to store a password. That will then allow the user to login to your Android/iPhone/etc. app using that password. You can then modify your Android/iPhone app to point users to this page so that they can view that password. In the future the Google Identity Toolkit will provide additional options to enable Android and iPhone apps to also use federated login and avoid the need for this generated password.</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class="footer">&copy; 2011 OpenID Foundation.</div>
+
+</body>
+</html>

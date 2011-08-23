@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Account Chooser</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="account-chooser">
+	<div class="modal-loading">
+		<a href="#"><img src="images/x.png" alt="x" /></a>
+		<img src="images/loading.png" alt="" />
+		<h2>Signing in</h2>
+	</div>
+	<div class="modal">
+		<div class="modal-header">
+			<img src="images/logo.png" alt="" />
+			<a href="#"><img src="images/x.png" alt="x" /></a>
+		</div>
+		<div id="modal-emailentry">
+			<h2>Enter your email address</h2>
+			<form id="email_entry" action="javascript: void(0)" method="post">
+				<input type="text" name="email" id="modal-email" size="25" value="" /> 
+				<input type="submit" name="signin" id="modal-signin" value="Sign in" />
+			</form>
+		</div>
+		<div id="modal-idpselection">
+			<h2>Sign in with</h2>
+			<ul>
+				<li><a href="#"><img src="images/myidp.png" alt="my idp" /></a></li>
+				<li><a href="#"><img src="images/socialnetwork.png" alt="SocialNetwork" /></a></li>
+				<li><a href="#"><img src="images/simplymail.png" alt="Simply, Mail." /></a></li>
+				<li><a href="#"><img src="images/freeemail.png" alt="Free Email" /></a></li>
+			</ul>
+		</div>
+		<div id="modal-accountselection">
+			<h2>Sign in</h2>
+			<ul>
+				<li>
+					<img src="images/bonniep.jpg" alt="" />
+					<p><strong>Bonnie Parker</strong>bonnie.parker1234@gmail.com</p>
+					<a href="#"><img src="images/x.png" alt="x" /></a>
+				</li>
+				<li>
+					<img src="images/bonniew.jpg" alt="" />
+					<p><strong>Bonnie Parker</strong>bonnie@bcgang.com</p>
+					<a href="#"><img src="images/x.png" alt="x" /></a>
+				</li>
+				<li>
+					<img src="images/clyde.jpg" alt="" />
+					<p><strong>Clyde Barrow</strong>clyde_barrow123@yahoo.com</p>
+					<a href="#"><img src="images/x.png" alt="x" /></a>
+				</li>
+			</ul>
+			<input type="submit" name="signinanother" id="modal-signin-another" value="Sign in with another account" />
+		</div>
+		<div class="modal-footer">
+			© 2011 OpenID Foundation. <a href="http://www.accountchooser.com/">Learn more about this</a>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
