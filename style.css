@@ -1,7 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway:100);
 
 html {
-	background: #f5f5f5 url("images/background.gif");
+	background: #f5f5f5 url(images/background.gif);
 }
 
 body {
@@ -132,7 +132,7 @@ a {
 	background-color: #7b7b7b;
 	background-image: -moz-linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.7));
 	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(0,0,0,.3)), to(rgba(0,0,0,.7)));
-	background-image: -webkit-linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.7)); 
+	background-image: -webkit-linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.7));
 	background-image: -o-linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.7));
 	-moz-box-shadow: 0 1px 0 rgba(0,0,0,0.4), inset 0 1px 0 rgba(255,255,255,0.35);
 	-webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.4), inset 0 1px 0 rgba(255,255,255,0.35);
@@ -145,7 +145,7 @@ a {
 #demo a:hover {
 	background-image: -moz-linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.6));
 	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(0,0,0,.2)), to(rgba(0,0,0,.6)));
-	background-image: -webkit-linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.6)); 
+	background-image: -webkit-linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.6));
 	background-image: -o-linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.6));
 	text-shadow: 0px -1px 1px rgba(0,0,0,0.75), 0px 0px 15px rgba(255,255,255,0.65);
 }
@@ -153,7 +153,7 @@ a {
 #demo a:active {
 	background-image: -moz-linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.75));
 	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(0,0,0,.45)), to(rgba(0,0,0,.75)));
-	background-image: -webkit-linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.75)); 
+	background-image: -webkit-linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.75));
 	background-image: -o-linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.75));
 	-moz-box-shadow: 0 0 0 rgba(0,0,0,0);
 	-webkit-box-shadow: 0 0 0 rgba(0,0,0,0);
@@ -321,18 +321,18 @@ a {
 	background-repeat: no-repeat;
 }
 
-#point1 {background-image: url("images/point1.png");}
-#point2 {background-image: url("images/point2.png");}
-#point3 {background-image: url("images/point3.png");}
-#point4 {background-image: url("images/point4.png");}
-#point5 {background-image: url("images/point5.png");}
-#point6 {background-image: url("images/point6.png");}
+#point1 {background-image: url(images/point1.png);}
+#point2 {background-image: url(images/point2.png);}
+#point3 {background-image: url(images/point3.png);}
+#point4 {background-image: url(images/point4.png);}
+#point5 {background-image: url(images/point5.png);}
+#point6 {background-image: url(images/point6.png);}
 
 .uxguidelines {
 	clear: both;
 	border-top: 1px solid #ececec;
 	padding-bottom: 1.25em;
-	
+
 }
 
 .uxguidelines .ux-code-snippet {
@@ -371,7 +371,7 @@ a {
 	font-size: 1.2em;
 	font-weight: 600;
 	letter-spacing: .05em;
-	margin: 1em 0;	
+	margin: 1em 0;
 	text-transform: uppercase;
 }
 
@@ -410,7 +410,7 @@ a {
 .account-chooser {
 	background: rgba(255,255,255,.78);
 	font-family: 'Open Sans', arial, sans-serif;
-	
+
 	position: fixed;
 	top:0;
 	left: 0;
@@ -434,7 +434,6 @@ a {
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
 	border-radius: 4px;
-	
 	margin: 20% auto 0 auto;
 	position: relative;
 	top: 120px;
@@ -483,17 +482,17 @@ a {
 @-webkit-keyframes loading {
 	0% {
 		-moz-transform: rotate(0deg);
-		-webkit-transform: rotate(0deg); 
+		-webkit-transform: rotate(0deg);
 		transform: rotate(0deg);
 	}
 	50% {
 		-moz-transform: rotate(180deg);
-		-webkit-transform: rotate(180deg); 
-		transform: rotate(180deg);	
+		-webkit-transform: rotate(180deg);
+		transform: rotate(180deg);
 	}
 	100% {
 		-moz-transform: rotate(360deg);
-		-webkit-transform: rotate(360deg); 
+		-webkit-transform: rotate(360deg);
 		transform: rotate(360deg);
 	}
 }
@@ -515,7 +514,6 @@ a {
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
 	border-radius: 4px;
-	
 	margin: 0 auto;
 	position: relative;
 	top: 20%;
@@ -544,7 +542,6 @@ a {
 	-moz-border-radius-topright: 2px;
 	border-top-left-radius: 2px;
 	border-top-right-radius: 2px;
-	
 	height: 55px;
 	padding-left: 40px;
 }
@@ -574,7 +571,7 @@ a {
 
 .account-chooser h2 {
 	color: #3d3d3d;
-	
+
 	font-size: .9em;
 	font-weight: 600;
 	padding: 0;
@@ -683,16 +680,15 @@ a {
 	border-radius: 2px;
 	color: #fff;
 	background-color: #5b5b5b;
-	background-image: url("images/keyhole.png"), -moz-linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.5));
-	background-image: url("images/keyhole.png"), -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(0,0,0,.1)), to(rgba(0,0,0,.5)));
-	background-image: url("images/keyhole.png"), -webkit-linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.5)); 
-	background-image: url("images/keyhole.png"), -o-linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.5));
+	background-image: url(images/keyhole.png), -moz-linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.5));
+	background-image: url(images/keyhole.png), -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(0,0,0,.1)), to(rgba(0,0,0,.5)));
+	background-image: url(images/keyhole.png), -webkit-linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.5));
+	background-image: url(images/keyhole.png), -o-linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.5));
 	background-position: left center;
 	background-repeat: no-repeat;
 	border: 1px solid #4d4d4d;
 	text-shadow: 0px 1px 3px rgba(0,0,0,0.25);
 	padding: .58em .975em .58em 2.6em;
-	
 	cursor: pointer;
 	display: block;
 	margin: 1.3em 13px 0 13px;
@@ -701,10 +697,10 @@ a {
 
 .account-chooser .modal #modal-accountselection #modal-signin-another:hover {
 	background-color: #6b6b6b;
-	background-image: url("images/keyhole.png"), -moz-linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.5));
-	background-image: url("images/keyhole.png"), -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(0,0,0,.1)), to(rgba(0,0,0,.5)));
-	background-image: url("images/keyhole.png"), -webkit-linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.5)); 
-	background-image: url("images/keyhole.png"), -o-linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.5));
+	background-image: url(images/keyhole.png), -moz-linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.5));
+	background-image: url(images/keyhole.png), -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(0,0,0,.1)), to(rgba(0,0,0,.5)));
+	background-image: url(images/keyhole.png), -webkit-linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.5));
+	background-image: url(images/keyhole.png), -o-linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.5));
 	background-position: left center;
 	background-repeat: no-repeat;
 }
@@ -715,7 +711,6 @@ a {
 
 .account-chooser .modal #modal-emailentry {
 	border-right: 1px solid #ebebeb;
-	
 	float: left;
 	height: 319px;
 	width: 219px;
@@ -724,7 +719,6 @@ a {
 
 .account-chooser .modal #modal-emailentry {
 	border-right: 1px solid #ebebeb;
-	
 	float: left;
 	height: 319px;
 	width: 219px;
@@ -734,7 +728,6 @@ a {
 .account-chooser .modal #modal-emailentry #modal-email {
 	border: 1px solid #bbb;
 	font-family: arial, sans-serif;
-	
 	display: block;
 	min-width: 203px;
 	font-size: .9em;
@@ -755,16 +748,15 @@ a {
 	border-radius: 2px;
 	color: #fff;
 	background-color: #5b5b5b;
-	background-image: url("images/keyhole.png"), -moz-linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.5));
-	background-image: url("images/keyhole.png"), -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(0,0,0,.1)), to(rgba(0,0,0,.5)));
-	background-image: url("images/keyhole.png"), -webkit-linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.5)); 
-	background-image: url("images/keyhole.png"), -o-linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.5));
+	background-image: url(images/keyhole.png), -moz-linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.5));
+	background-image: url(images/keyhole.png), -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(0,0,0,.1)), to(rgba(0,0,0,.5)));
+	background-image: url(images/keyhole.png), -webkit-linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.5));
+	background-image: url(images/keyhole.png), -o-linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.5));
 	background-position: left center;
 	background-repeat: no-repeat;
 	border: 1px solid #4d4d4d;
 	text-shadow: 0px 1px 3px rgba(0,0,0,0.25);
 	padding: .58em 1em .58em 2.6em;
-	
 	cursor: pointer;
 	display: block;
 	margin: 0;
@@ -773,10 +765,10 @@ a {
 
 .account-chooser .modal #modal-emailentry #modal-signin:hover {
 	background-color: #6b6b6b;
-	background-image: url("images/keyhole.png"), -moz-linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.5));
-	background-image: url("images/keyhole.png"), -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(0,0,0,.1)), to(rgba(0,0,0,.5)));
-	background-image: url("images/keyhole.png"), -webkit-linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.5)); 
-	background-image: url("images/keyhole.png"), -o-linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.5));
+	background-image: url(images/keyhole.png), -moz-linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.5));
+	background-image: url(images/keyhole.png), -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(0,0,0,.1)), to(rgba(0,0,0,.5)));
+	background-image: url(images/keyhole.png), -webkit-linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.5));
+	background-image: url(images/keyhole.png), -o-linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.5));
 	background-position: left center;
 	background-repeat: no-repeat;
 }
@@ -805,7 +797,6 @@ a {
 	-moz-border-radius: 2px;
 	-webkit-border-radius: 2px;
 	border-radius: 2px;
-	
 	margin: 0 0 10px 0;
 	padding: 0;
 	width: 219px;
@@ -817,7 +808,7 @@ a {
 	-moz-box-shadow: 0 2px 3px rgba(0,0,0,.07);
 	-webkit-box-shadow: 0 2px 3px rgba(0,0,0,.07);
 	box-shadow: 0 2px 3px rgba(0,0,0,.07);
-} 
+}
 
 .account-chooser .modal #modal-idpselection ul li:active {
 	-moz-box-shadow: 0 1px 0px rgba(0,0,0,.05);
@@ -848,7 +839,7 @@ a {
 
 .account-chooser .modal .modal-footer {
 	color: #999;
-	
+
 	padding: 1.5em 40px;
 	clear: both;
 	font-size: .5em;
@@ -898,8 +889,8 @@ a {
 	font-size: .85em;
 	background: transparent;
 	-moz-box-shadow: 0 0 0;
-    -webkit-box-shadow: 0 0 0;
-    box-shadow: 0 0 0;
+	-webkit-box-shadow: 0 0 0;
+	box-shadow: 0 0 0;
 	border: 0;
 }
 
