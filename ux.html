@@ -20,7 +20,92 @@
 	</ul>
 </div>
 
+<div class="uxguidelines">
 
+	<h2> UI Guidelines</h2>
+	
+	<span id="ux-point-1">
+		<h3>Add Accounts &amp; Chooser General Guidelines</h3>
+		<img src="images/add%20account%20overlay-2.png" alt="" />
+		<img src="images/chooser%20overlay-2.png" alt="" />
+	</span>
+	
+	<span id="ux-point-2">
+		<h3>Keyhole Use &amp; Explanation</h3>
+		<img src="images/keyhole%20guide.png" alt="keyhole" />
+		<p>The keyhole is the symbol and usability flag for the account chooser and it's abilities. It's main purpose is to serve as an indication on sign-in buttons to hint at the users' options when signing in. Any enabled sign in button should include the keyhole. <img src="images/signinux.png" alt="sign in button"></p>
+	</span>
+	
+	<span id="ux-point-3">	
+		<h3>Code Structure</h3>
+		<p>The overall skeleton, where the contents are modular pieces that can be swapped in and out:</p>
+<pre><span class="ux-code-snippet">&lt;div class=&quot;account-chooser&quot;&gt;
+    [Loading code snippet]
+    &lt;div class=&quot;modal&quot;&gt;
+        [Modal header]
+        [Contents of modal]
+        [Modal footer]
+    &lt;/div&gt;
+&lt;/div&gt;</span></pre>
+		<p>The loading snippet:</p>
+<pre><span class="ux-code-snippet">&lt;div class=&quot;modal-loading&quot;&gt;
+    &lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;images/x.png&quot; alt=&quot;x&quot; /&gt;&lt;/a&gt;
+    &lt;img src=&quot;images/loading.png&quot; alt=&quot;&quot; /&gt;
+    &lt;h2&gt;Signing in&lt;/h2&gt;
+&lt;/div&gt;</span></pre>
+		<p>The header snippet:</p>
+<pre><span class="ux-code-snippet">&lt;div class=&quot;modal-header&quot;&gt;
+    &lt;img src=&quot;images/logo.png&quot; alt=&quot;&quot; /&gt;
+    &lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;images/x.png&quot; alt=&quot;x&quot; /&gt;&lt;/a&gt;
+&lt;/div&gt;</span></pre>
+		<p>The footer snippet, to help promote awareness:</p>
+<pre><span class="ux-code-snippet">&lt;div class=&quot;modal-footer&quot;&gt;
+    &copy; 2011 OpenID Foundation. &lt;a href=&quot;http://www.accountchooser.com/&quot;&gt;Learn more about this&lt;/a&gt;
+&lt;/div&gt;</span></pre>
+		<p>The modal content is interchangeable, however the current best practice is to show the email entry column alongside the idp selection column, with the account choosing column a separate modal state.</p>
+		<p>The email entry column:</p>
+<pre><span class="ux-code-snippet">&lt;div id=&quot;modal-emailentry&quot;&gt;
+    &lt;h2&gt;Enter your email address&lt;/h2&gt;
+    &lt;form id=&quot;email_entry&quot; action=&quot;javascript: void(0)&quot; method=&quot;post&quot;&gt;
+        &lt;input type=&quot;text&quot; name=&quot;email&quot; id=&quot;modal-email&quot; size=&quot;25&quot; value=&quot;&quot; /&gt; 
+        &lt;input type=&quot;submit&quot; name=&quot;signin&quot; id=&quot;modal-signin&quot; value=&quot;Sign in&quot; /&gt;
+    &lt;/form&gt;
+&lt;/div&gt;</span></pre>
+		<p>The idp selection column:</p>
+<pre><span class="ux-code-snippet">&lt;div id=&quot;modal-idpselection&quot;&gt;
+    &lt;h2&gt;Sign in with&lt;/h2&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;images/myidp.png&quot; alt=&quot;my idp&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;images/socialnetwork.png&quot; alt=&quot;SocialNetwork&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;images/simplymail.png&quot; alt=&quot;Simply, Mail.&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;images/freeemail.png&quot; alt=&quot;Free Email&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;</span></pre>
+		<p>The account selection column:</p>
+<pre><span class="ux-code-snippet">&lt;div id=&quot;modal-accountselection&quot;&gt;
+    &lt;h2&gt;Sign in&lt;/h2&gt;
+    &lt;ul&gt;
+        &lt;li&gt;
+            &lt;img src=&quot;images/bonniep.jpg&quot; alt=&quot;&quot; /&gt;
+            &lt;p&gt;&lt;strong&gt;Bonnie Parker&lt;/strong&gt;bonnie.parker1234@gmail.com&lt;/p&gt;
+            &lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;images/x.png&quot; alt=&quot;x&quot; /&gt;&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;img src=&quot;images/bonniew.jpg&quot; alt=&quot;&quot; /&gt;
+            &lt;p&gt;&lt;strong&gt;Bonnie Parker&lt;/strong&gt;bonnie@bcgang.com&lt;/p&gt;
+            &lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;images/x.png&quot; alt=&quot;x&quot; /&gt;&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;img src=&quot;images/clyde.jpg&quot; alt=&quot;&quot; /&gt;
+            &lt;p&gt;&lt;strong&gt;Clyde Barrow&lt;/strong&gt;clyde_barrow123@yahoo.com&lt;/p&gt;
+            &lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;images/x.png&quot; alt=&quot;x&quot; /&gt;&lt;/a&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;input type=&quot;submit&quot; name=&quot;signinanother&quot; id=&quot;modal-signin-another&quot; value=&quot;Sign in with another account&quot; /&gt;
+&lt;/div&gt;</span></pre>
+	</span>
+
+</div>
 
 <div class="footer">&copy; 2011 OpenID Foundation.</div>
 
