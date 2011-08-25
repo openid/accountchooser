@@ -259,7 +259,7 @@ a {
 }
 
 .proposition p, .proposition li {
-	margin: 0;
+	margin: 0 0 1em;
 	font-size: .85em;
 	line-height: 1.6em;
 }
