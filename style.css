@@ -247,6 +247,21 @@ a {
 	margin-right: 2em;
 }
 
+.temporary-image-placeholder {
+  position: relative;
+  left: 265px;
+  margin: 0;
+  padding: 1.2em 3em;
+  width: 280px;
+  color: #666;
+  text-align: center;
+  border: 1px dashed rgba(0,0,0,.2);
+  background-color: rgba(255,255,255,.3);
+}
+.temporary-image-placeholder:after {
+  content: 'Image coming soon';
+}
+
 .proposition h3 {
 	font-size: 1.3em;
 	font-weight: 600;
@@ -256,6 +271,13 @@ a {
 
 .proposition h3 a {
 	color: #000;
+}
+
+.proposition h4 {
+	font-size: 1.1em;
+	font-weight: 600;
+	letter-spacing: .05em;
+	margin: 1.5em 0 .25em 0;
 }
 
 .proposition p, .proposition li {
