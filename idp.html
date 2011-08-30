@@ -1,36 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<title>Account Chooser | For Identity Providers</title>
-	<link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <title>Account Chooser | For Identity Providers</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <div class="header">
-	<a href="index.html">
-		<img src="images/keyhole-logo.png" alt="" />
-		<h1>Account Chooser</h1>
-	</a>
-	<ul>
-		<li><a href="index.html">Home</a></li>
-		<li><a href="how.html">How it works</a></li>
-		<li><a href="webowners.html">For website owners</a></li>
-		<li><a href="idp.html" id="current-page">For identity providers</a></li>
-	</ul>
+  <a href="index.html">
+    <img src="images/keyhole-logo.png" alt="" />
+    <h1>Account Chooser</h1>
+  </a>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="how.html">How it works</a></li>
+    <li><a href="webowners.html">For website owners</a></li>
+    <li><a href="idp.html" class="current-page">For identity providers</a></li>
+  </ul>
 </div>
 
 <div class="values">
-	<div class="value1">
-		<div class="proposition" id="simpleupgrade">
-			<h3>Identity Providers</h3>
-			<p>One of the advantages of the account chooser is that it scales well to support large numbers and types of identity providers around the world.  So if your company has considered becoming an identity provider, the adoption of account choosers by relying party websites is likely to increase the use of your identity provider.  This scaling is achieved in two ways.  First, when a relying party is about to display the page to enable a user to add an account, it can do a IP address geolocation of the user, as well as look at their browser language settings, and use that information to pick the list of most popular identity providers for that geography/language.  Second, that same page includes an email address field which the person can use if their identity provider’s button is not shown.  After the user submits their email, the website can check if an account already exists for that email address and then redirect the user to the identity provider associated with that account.  If the account does not exist the site can lookup the list of trusted identity providers to see if there is a known one for that domain, and if so redirect the user to it.</p>
-			<p>Any email provider and/or website can become an identity provider.  However most websites will only trust identity providers with a strong reputation for reliability, security, and usability.  Identity providers who feel they offer a high quality service can <a href="https://sites.google.com/site/oauthgoog/Home/certificationchecklist">choose to be certified</a> to increase the number of relying parties wo will trust them.</p>
-			<p>Some email providers or websites may not want to operate their identity provider themselves.  In that case there are Software-as-as-Service offerings that can run an identity provider on behalf of the websites.  Vendors include <a href="http://www.horizonmanager.com/">VMWare</a>, <a href="https://www.pingidentity.com/our-solutions/sso-cloud-identity.cfm">Ping Identity</a>, <a href="http://www.janrain.com/">Janrain</a>, <a href="http://googlecode.blogspot.com/2009/07/google-apps-openid-identity-hub-for.html">Google Apps</a>, <a href="http://blogs.msdn.com/b/windowsazureappfabric/archive/2011/04/07/2-windows-azure-appfabric-april-release-now-available-featuring-a-new-version-of-the-access-control-service.aspx">Microsoft Azure</a>, etc.  The SaaS vendors generally only need to be certified once, and then any of their customers can become a trusted source of identity.</p>
-			<p>Every email provider should strongly consider becoming an identity provider.  Otherwise those email users will be susceptible to the security threats of password reuse.  This includes not just consumer email providers, but also businesses and schools.</p>
-			<p>Websites that expose APIs to 3rd party websites, such as social networks or other platform offerings, should also consider becoming an identity provider.  However in many cases these website do not need to become certified because their 3rd party partners generally have already choosen to integrate with them based on the reptuation of their APIs, and not just their login system.</p>
-		</div>
-	</div>
+  <div class="value1">
+    <div class="proposition">
+      <h3>Identity Providers</h3>
+      <p>One of the advantages of the account chooser is that it scales well to support large numbers and types of identity providers around the world.  So if your company has considered becoming an identity provider, the adoption of account choosers by relying party websites is likely to increase the use of your identity provider.  This scaling is achieved in two ways.  First, when a relying party is about to display the page to enable a user to add an account, it can do a IP address geolocation of the user, as well as look at their browser language settings, and use that information to pick the list of most popular identity providers for that geography/language.  Second, that same page includes an email address field which the person can use if their identity provider’s button is not shown.  After the user submits their email, the website can check if an account already exists for that email address and then redirect the user to the identity provider associated with that account.  If the account does not exist the site can lookup the list of trusted identity providers to see if there is a known one for that domain, and if so redirect the user to it.</p>
+      <p>Any email provider and/or website can become an identity provider.  However most websites will only trust identity providers with a strong reputation for reliability, security, and usability.  Identity providers who feel they offer a high quality service can <a href="https://sites.google.com/site/oauthgoog/Home/certificationchecklist">choose to be certified</a> to increase the number of relying parties wo will trust them.</p>
+      <p>Some email providers or websites may not want to operate their identity provider themselves.  In that case there are Software-as-as-Service offerings that can run an identity provider on behalf of the websites.  Vendors include <a href="http://www.horizonmanager.com/">VMWare</a>, <a href="https://www.pingidentity.com/our-solutions/sso-cloud-identity.cfm">Ping Identity</a>, <a href="http://www.janrain.com/">Janrain</a>, <a href="http://googlecode.blogspot.com/2009/07/google-apps-openid-identity-hub-for.html">Google Apps</a>, <a href="http://blogs.msdn.com/b/windowsazureappfabric/archive/2011/04/07/2-windows-azure-appfabric-april-release-now-available-featuring-a-new-version-of-the-access-control-service.aspx">Microsoft Azure</a>, etc.  The SaaS vendors generally only need to be certified once, and then any of their customers can become a trusted source of identity.</p>
+      <p>Every email provider should strongly consider becoming an identity provider.  Otherwise those email users will be susceptible to the security threats of password reuse.  This includes not just consumer email providers, but also businesses and schools.</p>
+      <p>Websites that expose APIs to 3rd party websites, such as social networks or other platform offerings, should also consider becoming an identity provider.  However in many cases these website do not need to become certified because their 3rd party partners generally have already choosen to integrate with them based on the reptuation of their APIs, and not just their login system.</p>
+    </div>
+  </div>
 </div>
 
 <div class="footer">&copy; 2011 OpenID Foundation.</div>

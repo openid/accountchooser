@@ -1,55 +1,63 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<title>Account Chooser | How it Works</title>
-	<link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <title>Account Chooser | How it Works</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-	
+  
 <div class="header">
-	<a href="index.html">
-		<img src="images/keyhole-logo.png" alt="" />
-		<h1>Account Chooser</h1>
-	</a>
-	<ul>
-		<li><a href="index.html">Home</a></li>
-		<li><a href="how.html" id="current-page">How it works</a></li>
-		<li><a href="webowners.html">For website owners</a></li>
-		<li><a href="idp.html">For identity providers</a></li>
-	</ul>
+  <a href="index.html">
+    <img src="images/keyhole-logo.png" alt="" />
+    <h1>Account Chooser</h1>
+  </a>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="how.html" class="current-page">How it works</a></li>
+    <li><a href="webowners.html">For website owners</a></li>
+    <li><a href="idp.html">For identity providers</a></li>
+  </ul>
 </div>
 
 <div class="values">
-	<div class="value1">
-		<div class="proposition" id="simpleupgrade">
-			<h3>End users</h3>
-			<p>Websites are replacing traditional login boxes with an account chooser to make those sites more secure and easier to use (<a href="http://openidsamplestore.com/basic/">explore a sample site</a>). You will generally be able to recognize these websites because they have the following button with the special icon on the side to indicate they use an account chooser:</p>
-			<p class="temporary-image-placeholder"></p>
-			<p>Even if the site uses another icon, once you try to log into the site for the first time on a computer, you will generally see a page like the one below:</p>
-			<p class="temporary-image-placeholder"></p>
-			<p>The actual buttons shown will vary by websites, and may also change based on your language or location.  Those buttons are for identity providers where you might already have an account. It is generally easier and more secure to choose an identity provider to help you log into a website instead of manually setting up an account with a password on the website.</p>
-			<p>If you do not see a button listed for an identity provider that you use, you can simply type your email address.</p>
-			<p class="temporary-image-placeholder"></p>
-			<p>The website may be able to use your email provider as an identity provider. If not, you will have to login or sign up the traditional way with a password for this site.  In the future the website may detect that it can use your email provider as an identity provider, and in that case it will help upgrade your account the next time you login.</p>
-			<p>After you have logged into a website, it will be easier to log into the website in the future.  The website will present you with a page like the one below that lists the one or more accounts you have used at the website:</p>
-			<p class="temporary-image-placeholder"></p>
-			<p>Simply click the account that you want to use.  If you are using an identity provider, then generally you will be logged in automatically.</p>
-			<p>If you do not see an entry for the account you want to use, then simply click the button to add another account.</p>
-		</div>
-	</div>
-	<div class="value1">
-		<div class="proposition" id="simpleupgrade">
-			<h3>Advanced Topics</h3>
-			<h4>Deleting</h4>
-			<p>If you want the website to stop displaying an account, you can use your mouse to hover over that account entry and then choose the X button in the top corner to delete it.</p>
-			<p class="temporary-image-placeholder"></p>
-			<h4>Switching accounts</h4>
-			<p>On some websites you will notice that the addition of a navigation bar or button at the top of the page that lets you change your account.</p>
-			<p class="temporary-image-placeholder"></p>
-			<p>Simply click the current account and the website will show a list of other accounts you might switch to, including the option to add another account or sign out of all accounts.</p>
-		</div>
-	</div>
+  <div class="proposition" id="endusers">
+    <h3>End users</h3>
+    <p>Websites are replacing traditional login boxes with an account chooser to make those sites more secure and easier to use (<a href="http://openidsamplestore.com/basic/">explore a sample site</a>). You will generally be able to recognize these websites because they have the following button with the special icon on the side to indicate they use an account chooser:</p>
+    <div class="screenshot">
+      <img src="images/value3.png" alt="">
+    </div>
+    <p>Even if the site uses another icon, once you try to log into the site for the first time on a computer, you will generally see a page like the one below:</p>
+    <div class="screenshot">
+      <img src="images/how-nascar.png" alt="">
+    </div>
+    <p>The actual buttons shown will vary by websites, and may also change based on your language or location. Those buttons are for identity providers where you might already have an account. It is generally easier and more secure to choose an identity provider to help you log into a website instead of manually setting up an account with a password on the website.</p>
+    <p>If you do not see a button listed for an identity provider that you use, you can simply type your email address.</p>
+    <div class="screenshot">
+      <img src="images/how-emailsignin.png" alt="">
+    </div>
+    <p>The website may be able to use your email provider as an identity provider. If not, you will have to login or sign up the traditional way with a password for this site. In the future the website may detect that it can use your email provider as an identity provider, and in that case it will help upgrade your account the next time you login.</p>
+    <p>After you have logged into a website, it will be easier to log into the website in the future. The website will present you with a page like the one below that lists the one or more accounts you have used at the website:</p>
+    <div class="screenshot">
+      <img src="images/how-accounts.png" alt="">
+    </div>
+    <p>Simply click the account that you want to use. If you are using an identity provider, then generally you will be logged in automatically.</p>
+    <p>If you do not see an entry for the account you want to use, then simply click the button to add another account.</p>
+  </div>
+  <div class="proposition" id="advancedtopics">
+    <h3>Advanced Topics</h3>
+    <h4>Deleting</h4>
+    <p>If you want the website to stop displaying an account, you can use your mouse to hover over that account entry and then choose the X button in the top corner to delete it.</p>
+    <div class="screenshot">
+      <img src="images/how-accounts-delete.png" alt="">
+    </div>
+    <h4>Switching accounts</h4>
+    <p>On some websites you will notice that the addition of a navigation bar or button at the top of the page that lets you change your account.</p>
+    <div class="screenshot">
+      <img src="images/how-accounts-switch.png" alt="">
+    </div>
+    <p>Simply click the current account and the website will show a list of other accounts you might switch to, including the option to add another account or sign out of all accounts.</p>
+  </div>
 </div>
 
 <div class="footer">&copy; 2011 OpenID Foundation.</div>

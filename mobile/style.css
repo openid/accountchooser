@@ -1,268 +1,268 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Raleway:100);
 
 body {
-	margin: 0;
-	background: #f5f5f5;
+  margin: 0;
+  background: #f5f5f5;
 }
 
 .account-chooser {
-	font-family: 'Open Sans', arial, sans-serif;
+  font-family: 'Open Sans', arial, sans-serif;
 }
 
 .account-chooser .modal {
-	background: #f5f5f5;
-	
-	width: 299px;
-	margin: 0 auto;
+  background: #f5f5f5;
+  
+  width: 299px;
+  margin: 0 auto;
 }
 
 .account-chooser .modal .modal-header {
-	background: #acc75a;
-	border-bottom: 1px solid #efefef;
-	-webkit-border-top-left-radius: 2px;
-	-webkit-border-top-right-radius: 2px;
-	-moz-border-radius-topleft: 2px;
-	-moz-border-radius-topright: 2px;
-	border-top-left-radius: 2px;
-	border-top-right-radius: 2px;
-	
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 55px;
+  background: #acc75a;
+  border-bottom: 1px solid #efefef;
+  -webkit-border-top-left-radius: 2px;
+  -webkit-border-top-right-radius: 2px;
+  -moz-border-radius-topleft: 2px;
+  -moz-border-radius-topright: 2px;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 55px;
 }
 
 .account-chooser .modal .modal-header > img {
-	margin: 11px 0 12px 0;
-	padding-left: 40px;
+  margin: 11px 0 12px 0;
+  padding-left: 40px;
 }
 
 .account-chooser h2 {
-	color: #3d3d3d;
-	
-	font-size: .9em;
-	font-weight: 600;
-	padding: 0;
-	margin: 15px 0;
+  color: #3d3d3d;
+  
+  font-size: .9em;
+  font-weight: 600;
+  padding: 0;
+  margin: 15px 0;
 }
 
 .account-chooser #accounts-select h2 {
-	font-size: 1em;
-	font-weight: 600;
-	margin: 15px 0 10px 12px;
+  font-size: 1em;
+  font-weight: 600;
+  margin: 15px 0 10px 12px;
 }
 
 .account-chooser .modal #modal-accountselection {
-	float: left;
-	width: 245px;
-	padding: 55px 27px 15px 27px;
-	position: relative;
+  float: left;
+  width: 245px;
+  padding: 55px 27px 15px 27px;
+  position: relative;
 }
 
 .account-chooser .modal #modal-accountselection > a {
-	position: absolute;
-	top: 70px;
-	right: 27px;
-	display: block;
-	font-size: .75em;
-	font-weight: 400;
-	text-decoration: none;
-	color: #525252;
-	background: #f8f8f8;
-	border: 1px solid #d6d6d6;
-	-moz-border-radius: 2px;
-	-webkit-border-radius: 2px;
-	border-radius: 2px;
-	padding: 3px 7px;
+  position: absolute;
+  top: 70px;
+  right: 27px;
+  display: block;
+  font-size: .75em;
+  font-weight: 400;
+  text-decoration: none;
+  color: #525252;
+  background: #f8f8f8;
+  border: 1px solid #d6d6d6;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  padding: 3px 7px;
 }
 
 .account-chooser .modal #modal-accountselection ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .account-chooser .modal #modal-accountselection ul li {
-	position: relative;
+  position: relative;
 }
 
 .account-chooser .modal #modal-accountselection ul li {
-	background: #fff;
-	border: 1px solid #d9d9d9;
-	
-	display: block;
-	min-height: 42px;
-	margin: 0 0 -1px 0;
-	padding: 8px 12px;
-	cursor: pointer;
+  background: #fff;
+  border: 1px solid #d9d9d9;
+  
+  display: block;
+  min-height: 42px;
+  margin: 0 0 -1px 0;
+  padding: 8px 12px;
+  cursor: pointer;
 }
 
 .account-chooser .modal #modal-accountselection ul li a {
-	display: none;
-	line-height: 0;
-	position: absolute;
-	top: 0px;
-	right: 0px;
-	width: 10px;
-	height: 10px;
-	padding: 10px;
-	opacity: .9;
+  display: none;
+  line-height: 0;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 10px;
+  height: 10px;
+  padding: 10px;
+  opacity: .9;
 }
 
 .account-chooser .modal #modal-accountselection ul li > img {
-	float: left;
-	margin-right: 15px;
-	-webkit-border-radius: 2px;
-	-moz-border-radius: 2px;
-	border-radius: 2px;
+  float: left;
+  margin-right: 15px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
 }
 
 .account-chooser .modal #modal-accountselection ul li p {
-	font-size: .8em;
-	color: #6d6d6d;
-	line-height: 1.25em;
-	padding: .35em 0 0 0;
-	margin: 0;
+  font-size: .8em;
+  color: #6d6d6d;
+  line-height: 1.25em;
+  padding: .35em 0 0 0;
+  margin: 0;
 }
 
 .account-chooser .modal #modal-accountselection ul li p strong {
-	display: block;
-	font-weight: 600;
-	color: #222;
+  display: block;
+  font-weight: 600;
+  color: #222;
 }
 
 .account-chooser .modal #modal-accountselection #modal-signin-another {
-	font-size: .72em;
-	font-weight: 600;
-	-moz-border-radius: 2px;
-	-webkit-border-radius: 2px;
-	border-radius: 2px;
-	color: #fff;
-	background-color: #5b5b5b;
-	background-image: url("images/keyhole.png"), -moz-linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.5));
-	background-image: url("images/keyhole.png"), -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(0,0,0,.1)), to(rgba(0,0,0,.5)));
-	background-image: url("images/keyhole.png"), -webkit-linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.5)); 
-	background-image: url("images/keyhole.png"), -o-linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.5));
-	background-position: left center;
-	background-repeat: no-repeat;
-	border: 1px solid #4d4d4d;
-	text-shadow: 0px 1px 3px rgba(0,0,0,0.25);
-	padding: .58em .975em .58em 2.6em;
-	
-	cursor: pointer;
-	display: block;
-	margin: 1.3em 13px 0 13px;
-	text-decoration: none;
+  font-size: .72em;
+  font-weight: 600;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  color: #fff;
+  background-color: #5b5b5b;
+  background-image: url("images/keyhole.png"), -moz-linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.5));
+  background-image: url("images/keyhole.png"), -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(0,0,0,.1)), to(rgba(0,0,0,.5)));
+  background-image: url("images/keyhole.png"), -webkit-linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.5)); 
+  background-image: url("images/keyhole.png"), -o-linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.5));
+  background-position: left center;
+  background-repeat: no-repeat;
+  border: 1px solid #4d4d4d;
+  text-shadow: 0px 1px 3px rgba(0,0,0,0.25);
+  padding: .58em .975em .58em 2.6em;
+  
+  cursor: pointer;
+  display: block;
+  margin: 1.3em 13px 0 13px;
+  text-decoration: none;
 }
 
 .account-chooser .modal .editing-accounts > a {
-	opacity: .5;
+  opacity: .5;
 }
 
 .account-chooser .modal .editing-accounts ul li {
-	margin: 0 0 10px 0 !important;
-	-moz-box-shadow: 0 2px 3px rgba(0,0,0,.07);
-	-webkit-box-shadow: 0 2px 3px rgba(0,0,0,.07);
-	box-shadow: 0 2px 3px rgba(0,0,0,.07);
+  margin: 0 0 10px 0 !important;
+  -moz-box-shadow: 0 2px 3px rgba(0,0,0,.07);
+  -webkit-box-shadow: 0 2px 3px rgba(0,0,0,.07);
+  box-shadow: 0 2px 3px rgba(0,0,0,.07);
 }
 
 .account-chooser .modal .editing-accounts ul li a {
-	display: block !important;
+  display: block !important;
 }
 
 .account-chooser .modal #modal-idpselection #modal-email {
-	border: 1px solid #bbb;
-	font-family: arial, sans-serif;
-	
-	display: block;
-	min-width: 203px;
-	font-size: .9em;
-	padding: .4em 7px;
-	margin: 0 0 12px 0;
-	outline: none;
+  border: 1px solid #bbb;
+  font-family: arial, sans-serif;
+  
+  display: block;
+  min-width: 203px;
+  font-size: .9em;
+  padding: .4em 7px;
+  margin: 0 0 12px 0;
+  outline: none;
 }
 
 .account-chooser .modal #modal-idpselection #modal-email:focus {
-	border: 1px solid #4d4d4d;
+  border: 1px solid #4d4d4d;
 }
 
 .account-chooser .modal #modal-idpselection #modal-signin {
-	font-size: .72em;
-	font-weight: 600;
-	-moz-border-radius: 2px;
-	-webkit-border-radius: 2px;
-	border-radius: 2px;
-	color: #fff;
-	background-color: #5b5b5b;
-	background-image: url("images/keyhole.png"), -moz-linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.5));
-	background-image: url("images/keyhole.png"), -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(0,0,0,.1)), to(rgba(0,0,0,.5)));
-	background-image: url("images/keyhole.png"), -webkit-linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.5)); 
-	background-image: url("images/keyhole.png"), -o-linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.5));
-	background-position: left center;
-	background-repeat: no-repeat;
-	border: 1px solid #4d4d4d;
-	text-shadow: 0px 1px 3px rgba(0,0,0,0.25);
-	padding: .58em 1em .58em 2.6em;
-	
-	cursor: pointer;
-	display: block;
-	margin: 0;
-	text-decoration: none;
+  font-size: .72em;
+  font-weight: 600;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  color: #fff;
+  background-color: #5b5b5b;
+  background-image: url("images/keyhole.png"), -moz-linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.5));
+  background-image: url("images/keyhole.png"), -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(0,0,0,.1)), to(rgba(0,0,0,.5)));
+  background-image: url("images/keyhole.png"), -webkit-linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.5)); 
+  background-image: url("images/keyhole.png"), -o-linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.5));
+  background-position: left center;
+  background-repeat: no-repeat;
+  border: 1px solid #4d4d4d;
+  text-shadow: 0px 1px 3px rgba(0,0,0,0.25);
+  padding: .58em 1em .58em 2.6em;
+  
+  cursor: pointer;
+  display: block;
+  margin: 0;
+  text-decoration: none;
 }
 
 .account-chooser .modal #modal-idpselection {
-	float: left;
-	width: 260px;
-	padding: 55px 0 0 40px;
+  float: left;
+  width: 260px;
+  padding: 55px 0 0 40px;
 }
 
 .account-chooser .modal #modal-idpselection ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-	text-align: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
 }
 
 .account-chooser .modal #modal-idpselection ul li {
-	background: #fff;
-	border: 1px solid #d8d8d8;
-	-moz-border-radius: 2px;
-	-webkit-border-radius: 2px;
-	border-radius: 2px;
-	
-	margin: 0 0 -1px 0;
-	padding: 0;
-	width: 219px;
+  background: #fff;
+  border: 1px solid #d8d8d8;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  
+  margin: 0 0 -1px 0;
+  padding: 0;
+  width: 219px;
 }
 
 .account-chooser .modal #modal-idpselection ul li a {
-	display: block;
-	min-height: 50px;
-	line-height: 47px;
+  display: block;
+  min-height: 50px;
+  line-height: 47px;
 }
 
 .account-chooser .modal #modal-idpselection ul li a img {
-	vertical-align: middle;
+  vertical-align: middle;
 }
 
 .account-chooser .modal #modal-idpselection ul .disabled-idp a img {opacity: .2;}
 .account-chooser .modal #modal-idpselection ul .enabled-idp {
-	position: relative;
-	bottom: 1px;
-	-moz-box-shadow: 0 2px 3px rgba(0,0,0,.07);
-	-webkit-box-shadow: 0 2px 3px rgba(0,0,0,.07);
-	box-shadow: 0 2px 3px rgba(0,0,0,.07);
+  position: relative;
+  bottom: 1px;
+  -moz-box-shadow: 0 2px 3px rgba(0,0,0,.07);
+  -webkit-box-shadow: 0 2px 3px rgba(0,0,0,.07);
+  box-shadow: 0 2px 3px rgba(0,0,0,.07);
 }
 
 .account-chooser .modal .modal-footer {
-	color: #999;
-	
-	padding: 1.5em 40px;
-	clear: both;
-	font-size: .5em;
+  color: #999;
+  
+  padding: 1.5em 40px;
+  clear: both;
+  font-size: .5em;
 }
 
 .account-chooser .modal .modal-footer a {
-	color: #1155cc;
+  color: #1155cc;
 }

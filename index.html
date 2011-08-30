@@ -1,170 +1,170 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<title>Account Chooser</title>
-	<link rel="stylesheet" href="style.css">
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
-	<script src="script.js" type="text/javascript"></script>
-	<script src="https://github.com/jeresig/jquery.hotkeys/raw/master/jquery.hotkeys.js"></script>
+  <meta charset="utf-8">
+  <title>Account Chooser</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+  <script src="script.js" type="text/javascript"></script>
+  <script src="https://github.com/jeresig/jquery.hotkeys/raw/master/jquery.hotkeys.js"></script>
 </head>
 <body>
 <ol id="slideshow-slides">
-	<li id="help-text">Click on the slide numbers or use the arrow keys to navigate:</li>
-	<li id="1" class="current-slide">1</li>
-	<li id="2">2</li>
-	<li id="3">3</li>
-	<li id="4">4</li>
-	<li id="5">5</li>
-	<li id="close-everything">close</li>
-</ol>	
+  <li id="help-text">Click on the slide numbers or use the arrow keys to navigate:</li>
+  <li id="1" class="current-slide">1</li>
+  <li id="2">2</li>
+  <li id="3">3</li>
+  <li id="4">4</li>
+  <li id="5">5</li>
+  <li id="close-everything">close</li>
+</ol>  
 <span id="cursor"><img src="images/cursor.png" alt=""></span>
-	
+  
 <div class="account-chooser">
-	<div class="modal-loading">
-		<a href="#"><img src="images/x.png" alt="x" /></a>
-		<img src="images/loading.png" alt="" />
-		<h2>Signing in</h2>
-	</div>
-	<div class="modal">
-		<div class="modal-header">
-			<img src="images/logo.png" alt="" />
-			<a href="#"><img src="images/x.png" alt="x" /></a>
-		</div>
-		<div id="modal-emailentry">
-			<h2>Enter your email address</h2>
-			<form id="email_entry" action="javascript: void(0)" method="post">
-				<input type="text" name="email" id="modal-email" size="25" value="" /> 
-				<input type="submit" name="signin" id="modal-signin" value="Sign in" />
-			</form>
-		</div>
-		<div id="modal-idpselection">
-			<h2>Sign in with</h2>
-			<ul>
-				<li><a href="#"><img src="images/myidp.png" alt="my idp" /></a></li>
-				<li><a href="#"><img src="images/socialnetwork.png" alt="SocialNetwork" /></a></li>
-				<li><a href="#"><img src="images/simplymail.png" alt="Simply, Mail." /></a></li>
-				<li><a href="#"><img src="images/freeemail.png" alt="Free Email" /></a></li>
-			</ul>
-		</div>
-		<div id="modal-accountselection">
-			<h2>Sign in</h2>
-			<ul>
-				<li>
-					<img src="images/bonniep.jpg" alt="" />
-					<p><strong>Bonnie Parker</strong>bonnie.parker1234@gmail.com</p>
-					<a href="#"><img src="images/x.png" alt="x" /></a>
-				</li>
-				<li>
-					<img src="images/bonniew.jpg" alt="" />
-					<p><strong>Bonnie Parker</strong>bonnie@bcgang.com</p>
-					<a href="#"><img src="images/x.png" alt="x" /></a>
-				</li>
-				<li>
-					<img src="images/clyde.jpg" alt="" />
-					<p><strong>Clyde Barrow</strong>clyde_barrow123@yahoo.com</p>
-					<a href="#"><img src="images/x.png" alt="x" /></a>
-				</li>
-			</ul>
-			<input type="submit" name="signinanother" id="modal-signin-another" value="Sign in with another account" />
-		</div>
-		<div class="modal-footer">
-			© 2011 OpenID Foundation. <a href="http://www.accountchooser.com/">Learn more about this</a>
-		</div>
-	</div>
+  <div class="modal-loading">
+    <a href="#"><img src="images/x.png" alt="x" /></a>
+    <img src="images/loading.png" alt="" />
+    <h2>Signing in</h2>
+  </div>
+  <div class="modal">
+    <div class="modal-header">
+      <img src="images/logo.png" alt="" />
+      <a href="#"><img src="images/x.png" alt="x" /></a>
+    </div>
+    <div id="modal-emailentry">
+      <h2>Enter your email address</h2>
+      <form id="email_entry" action="javascript: void(0)" method="post">
+        <input type="text" name="email" id="modal-email" size="25" value="" /> 
+        <input type="submit" name="signin" id="modal-signin" value="Sign in" />
+      </form>
+    </div>
+    <div id="modal-idpselection">
+      <h2>Sign in with</h2>
+      <ul>
+        <li><a href="#"><img src="images/myidp.png" alt="my idp" /></a></li>
+        <li><a href="#"><img src="images/socialnetwork.png" alt="SocialNetwork" /></a></li>
+        <li><a href="#"><img src="images/simplymail.png" alt="Simply, Mail." /></a></li>
+        <li><a href="#"><img src="images/freeemail.png" alt="Free Email" /></a></li>
+      </ul>
+    </div>
+    <div id="modal-accountselection">
+      <h2>Sign in</h2>
+      <ul>
+        <li>
+          <img src="images/bonniep.jpg" alt="" />
+          <p><strong>Bonnie Parker</strong>bonnie.parker1234@gmail.com</p>
+          <a href="#"><img src="images/x.png" alt="x" /></a>
+        </li>
+        <li>
+          <img src="images/bonniew.jpg" alt="" />
+          <p><strong>Bonnie Parker</strong>bonnie@bcgang.com</p>
+          <a href="#"><img src="images/x.png" alt="x" /></a>
+        </li>
+        <li>
+          <img src="images/clyde.jpg" alt="" />
+          <p><strong>Clyde Barrow</strong>clyde_barrow123@yahoo.com</p>
+          <a href="#"><img src="images/x.png" alt="x" /></a>
+        </li>
+      </ul>
+      <input type="submit" name="signinanother" id="modal-signin-another" value="Sign in with another account" />
+    </div>
+    <div class="modal-footer">
+      © 2011 OpenID Foundation. <a href="http://www.accountchooser.com/">Learn more about this</a>
+    </div>
+  </div>
 </div>
-	
+  
 <div class="header">
-	<a href="#">
-		<img src="images/keyhole-logo.png" alt="" />
-		<h1>Account Chooser</h1>
-	</a>
-	<ul>
-		<li><a href="#" id="current-page">Home</a></li>
-		<li><a href="how.html">How it works</a></li>
-		<li><a href="webowners.html">For website owners</a></li>
-		<li><a href="idp.html">For identity providers</a></li>
-	</ul>
+  <a href="#">
+    <img src="images/keyhole-logo.png" alt="" />
+    <h1>Account Chooser</h1>
+  </a>
+  <ul>
+    <li><a href="#" class="current-page">Home</a></li>
+    <li><a href="how.html">How it works</a></li>
+    <li><a href="webowners.html">For website owners</a></li>
+    <li><a href="idp.html">For identity providers</a></li>
+  </ul>
 </div>
 
 <div class="pitch">
-	<h2>An open standard and user interface guidelines for the next generation of web sign in.</h2>
-	<div id="demo">
-		<p>See a slideshow</p>
-		<a href="#">
-			<img src="images/keyhole-demo-icon.png" alt="" />
-			<p>sign in</p>
-		</a>
-	</div>
+  <h2>An open standard and user interface guidelines for the next generation of web sign in.</h2>
+  <div id="demo">
+    <p>See a slideshow</p>
+    <a href="#">
+      <img src="images/keyhole-demo-icon.png" alt="" />
+      <p>sign in</p>
+    </a>
+  </div>
 </div>
 
 <div class="values">
-	<div class="value1">
-		<img src="images/value1.png" alt="" />
-		<div class="proposition">
-			<h3><a href="learnmore.html#simpleupgrade">Simple Upgrade</a></h3>
-			<p>If a user has been logging into a website for a long time with a password, then the account chooser experience makes it easy for the website to upgrade them to use an identity provider.  After the website upgrades their login flow to use an account chooser, the user will either click a button or type their email address.  The user can then be redirected to an identity provider, and give their consent to be identified to the website. <a href="learnmore.html#simpleupgrade">Learn more</a></p>
-		</div>
-	</div>
-	<div class="value2">
-		<img src="images/value2.png" alt="" />
-		<div class="proposition">
-			<h3><a href="learnmore.html#easesswitching">Eases switching between multiple accounts.</a></h3>
-			<p>Many computers are shared by multiple people who each have their own accounts. Many more are used to access multiple accounts used by the same person such as their personal and work accounts.  It is frustrating for end users to log into a traditional website where multiple accounts on the same computer are used. However if the website deploys an account chooser, then the process is much simpler.  The website can make it even more simpler by providing a navigation bar or button to let the user switch accounts. <a href="learnmore.html#easesswitching">Learn more</a></p>
-		</div>
-	</div>
-	<div class="value3">
-		<img src="images/value3.png" alt="" />
-		<div class="proposition">
-			<h3><a href="learnmore.html#reducessignuppains">Reduces signup pains on any website.</a></h3>
-			<p>By deploying an account chooser on your website you should expect to increase sign up and log in rates on your websites, as well as reduce costs from hijacked accounts and users who have trouble logging into their account. <a href="learnmore.html#reducessignuppains">Learn more</a></p>
-		</div>
-	</div>
+  <div class="value1">
+    <img src="images/value1.png" alt="" />
+    <div class="proposition">
+      <h3><a href="learnmore.html#simpleupgrade">Simple Upgrade</a></h3>
+      <p>If a user has been logging into a website for a long time with a password, then the account chooser experience makes it easy for the website to upgrade them to use an identity provider.  After the website upgrades their login flow to use an account chooser, the user will either click a button or type their email address.  The user can then be redirected to an identity provider, and give their consent to be identified to the website. <a href="learnmore.html#simpleupgrade">Learn more</a></p>
+    </div>
+  </div>
+  <div class="value2">
+    <img src="images/value2.png" alt="" />
+    <div class="proposition">
+      <h3><a href="learnmore.html#easesswitching">Eases switching between multiple accounts.</a></h3>
+      <p>Many computers are shared by multiple people who each have their own accounts. Many more are used to access multiple accounts used by the same person such as their personal and work accounts.  It is frustrating for end users to log into a traditional website where multiple accounts on the same computer are used. However if the website deploys an account chooser, then the process is much simpler.  The website can make it even more simpler by providing a navigation bar or button to let the user switch accounts. <a href="learnmore.html#easesswitching">Learn more</a></p>
+    </div>
+  </div>
+  <div class="value3">
+    <img src="images/value3.png" alt="" />
+    <div class="proposition">
+      <h3><a href="learnmore.html#reducessignuppains">Reduces signup pains on any website.</a></h3>
+      <p>By deploying an account chooser on your website you should expect to increase sign up and log in rates on your websites, as well as reduce costs from hijacked accounts and users who have trouble logging into their account. <a href="learnmore.html#reducessignuppains">Learn more</a></p>
+    </div>
+  </div>
 </div>
 
 <div class="tertiary">
-	<div class="point">
-		<span id="point1"></span>
-		<div class="point-content">
-			<h4><a href="learnmore.html#security">Security</a></h4>
-			<p>The use of identity providers not only makes it easier for people to use websites, but also makes their accounts more secure.  With traditional websites, people tend to reuse password across sites.  If hackers are able to compromise even a single website, they can then use that password to break into the person’s accounts on other websites.  Unless a user’s password is extremely complex, there are unfortunately very simple techniques, such as dictionary attacks, that hackers can use to identity a person’s password on almost any small to medium website.  Fortunately identity providers can be certified to confirm they offer protection against those types of techniques. <a href="learnmore.html#security">Learn more</a></p>
-		</div>
-	</div>
-	<div class="point">
-		<span id="point2"></span>
-		<div class="point-content">
-			<h4><a href="learnmore.html#consistency">Consistency</a></h4>
-			<p>Websites can deploy the account chooser in a very visually consistent manner.  One a user has used this technique on one website, they will be able to easily recognize and use it on another website.  That visual recognition generally causes an increase in the set of users who are willing to log into a website they have never visited before. <a href="learnmore.html#consistency">Learn more</a></p>
-		</div>
-	</div>
-	<div class="point">
-		<span id="point3"></span>
-		<div class="point-content">
-			<h4><a href="learnmore.html#forgottenaccounts">Forgotten Accounts</a></h4>
-			<p>One common problem end users encounter is when they visit a website and do not remember that they already have an account.  Generally they would try to go to the account creation step, and they would get an error about their existing account.  With the account chooser, this problem goes away.  They will either type their email or choose their identity provider.  In either case the website can then immediately log them in if they have an identity provider, or ask for their password if they don’t. <a href="learnmore.html#forgottenaccounts">Learn more</a></p>
-		</div>
-	</div>
-	<div class="point">
-		<span id="point4"></span>
-		<div class="point-content">
-			<h4><a href="learnmore.html#futurecompatability">Future Compatibility</a></h4>
-			<p>Today there are a few identity providers, but in the future we expect many more.  A website could simply add buttons to its login box for 3-4 identity providers, but they could not add more without visually overwhelming users. The account chooser experience splits the process of adding an account from the process of signing into an account.  When the website shows a page to add an account, it can generally show 3-4 identity providers.  That list can be modified over time, and can even be varied based on information like the user’s location and preferred language. <a href="learnmore.html#futurecompatability">Learn more</a></p>
-		</div>
-	</div>
-	<div class="point">
-		<span id="point5"></span>
-		<div class="point-content">
-			<h4><a href="learnmore.html#legacycompatability">Legacy Compatibility</a></h4>
-			<p>Most websites today offer a traditional login box with fields for a user’s email address and password.  The website could offer support for identity providers by simply adding buttons around the existing login box.  However that generally creates significant confusion for users because they think there are two ways to login, and they don’t know which one is the correct method to use.  This problem is greatly reduced by splitting the process of adding an account from the process of signing into an account.  It also avoids showing the password field to any users except those who absolutely need to use a password. <a href="learnmore.html#legacycompatability">Learn more</a></p>
-		</div>
-	</div>
-	<div class="point">
-		<span id="point6"></span>
-		<div class="point-content">
-			<h4><a href="learnmore.html#protocolagnostic">Protocol Agnostic</a></h4>
-			<p>There are many technical protocols support by identity providers (OpenID v2, SAML, OAuth2, OpenIDConnect, etc.)  The Account Chooser is not specific to the protocol, and the website can even use different protocols to support different identity providers.  As protocols evolve in the future, the website can continue to use the Account Chooser experience to hide the protocol details from the user. <a href="learnmore.html#protocolagnostic">Learn more</a></p>
-		</div>
-	</div>
+  <div class="point">
+    <span id="point1"></span>
+    <div class="point-content">
+      <h4><a href="learnmore.html#security">Security</a></h4>
+      <p>The use of identity providers not only makes it easier for people to use websites, but also makes their accounts more secure.  With traditional websites, people tend to reuse password across sites.  If hackers are able to compromise even a single website, they can then use that password to break into the person’s accounts on other websites.  Unless a user’s password is extremely complex, there are unfortunately very simple techniques, such as dictionary attacks, that hackers can use to identity a person’s password on almost any small to medium website.  Fortunately identity providers can be certified to confirm they offer protection against those types of techniques. <a href="learnmore.html#security">Learn more</a></p>
+    </div>
+  </div>
+  <div class="point">
+    <span id="point2"></span>
+    <div class="point-content">
+      <h4><a href="learnmore.html#consistency">Consistency</a></h4>
+      <p>Websites can deploy the account chooser in a very visually consistent manner.  One a user has used this technique on one website, they will be able to easily recognize and use it on another website.  That visual recognition generally causes an increase in the set of users who are willing to log into a website they have never visited before. <a href="learnmore.html#consistency">Learn more</a></p>
+    </div>
+  </div>
+  <div class="point">
+    <span id="point3"></span>
+    <div class="point-content">
+      <h4><a href="learnmore.html#forgottenaccounts">Forgotten Accounts</a></h4>
+      <p>One common problem end users encounter is when they visit a website and do not remember that they already have an account.  Generally they would try to go to the account creation step, and they would get an error about their existing account.  With the account chooser, this problem goes away.  They will either type their email or choose their identity provider.  In either case the website can then immediately log them in if they have an identity provider, or ask for their password if they don’t. <a href="learnmore.html#forgottenaccounts">Learn more</a></p>
+    </div>
+  </div>
+  <div class="point">
+    <span id="point4"></span>
+    <div class="point-content">
+      <h4><a href="learnmore.html#futurecompatability">Future Compatibility</a></h4>
+      <p>Today there are a few identity providers, but in the future we expect many more.  A website could simply add buttons to its login box for 3-4 identity providers, but they could not add more without visually overwhelming users. The account chooser experience splits the process of adding an account from the process of signing into an account.  When the website shows a page to add an account, it can generally show 3-4 identity providers.  That list can be modified over time, and can even be varied based on information like the user’s location and preferred language. <a href="learnmore.html#futurecompatability">Learn more</a></p>
+    </div>
+  </div>
+  <div class="point">
+    <span id="point5"></span>
+    <div class="point-content">
+      <h4><a href="learnmore.html#legacycompatability">Legacy Compatibility</a></h4>
+      <p>Most websites today offer a traditional login box with fields for a user’s email address and password.  The website could offer support for identity providers by simply adding buttons around the existing login box.  However that generally creates significant confusion for users because they think there are two ways to login, and they don’t know which one is the correct method to use.  This problem is greatly reduced by splitting the process of adding an account from the process of signing into an account.  It also avoids showing the password field to any users except those who absolutely need to use a password. <a href="learnmore.html#legacycompatability">Learn more</a></p>
+    </div>
+  </div>
+  <div class="point">
+    <span id="point6"></span>
+    <div class="point-content">
+      <h4><a href="learnmore.html#protocolagnostic">Protocol Agnostic</a></h4>
+      <p>There are many technical protocols support by identity providers (OpenID v2, SAML, OAuth2, OpenIDConnect, etc.)  The Account Chooser is not specific to the protocol, and the website can even use different protocols to support different identity providers.  As protocols evolve in the future, the website can continue to use the Account Chooser experience to hide the protocol details from the user. <a href="learnmore.html#protocolagnostic">Learn more</a></p>
+    </div>
+  </div>
 </div>
 
 <div class="footer">&copy; 2011 OpenID Foundation.</div>
